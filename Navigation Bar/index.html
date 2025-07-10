@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navigation Bar</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick="toggleMenu()"><a href="#" >Navbar <img src="close.png" alt="X"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+            <li onclick="toggleMenu()"><a href="#">Navbar</a></li>
+            <li class="hideOnMobile"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Services</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="hideOnMobile"><a href="#">Login</a></li>
+            <li onclick="toggleMenu()"><a href="#"><img src="menu.png" alt="menu"></a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This is a responsive navigation bar example.</p>
+        
+     <script>
+        function toggleMenu(){
+            var menu = document.querySelector(".sidebar");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+
+     </script>   
+</body>
+</html>
