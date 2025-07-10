@@ -62,7 +62,9 @@ nav li:first-child {
 .sidebar a {
   width: 100%;
 }
-
+.menu-button{
+  display: none;
+}
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -73,9 +75,13 @@ nav li:first-child {
     font-size: 25px;
     font-weight: bold;
   }
+  .menu-button{
+    display: block;
+  }
 }
 @media (max-width: 400px) {
   .sidebar {
     width: 100%;
   }
+  
 }
