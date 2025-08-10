@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>লাইভ সময় – Asia/Dhaka</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card" role="group" aria-label="Live time card">
+      <h1 id="title">বাংলাদেশ (Asia/Dhaka) লাইভ সময়</h1>
+
+      <div id="time" class="time-display" aria-live="polite">--:--:--</div>
+      <div id="date" class="date-display">তারিখ লোড হচ্ছে…</div>
+
+      <div class="progress" aria-label="Seconds progress">
+        <div class="progress-bar" id="secBar" style="width: 0%"></div>
+      </div>
+
+      <div class="controls">
+        <div class="row">
+          <label for="tzSelect" id="tzLabel">টাইম জোন</label>
+          <select id="tzSelect" aria-labelledby="tzLabel"></select>
+        </div>
+
+        <div class="buttons">
+          <button id="formatToggle" type="button">১২-ঘণ্টা দেখাও</button>
+          <button id="themeToggle" type="button" aria-pressed="false">
+            ডার্ক মোড
+          </button>
+          <button id="langToggle" type="button">English</button>
+          <button id="copyBtn" type="button">কপি</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
